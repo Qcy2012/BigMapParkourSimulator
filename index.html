@@ -303,12 +303,11 @@
 
         window.viewDetails = function(id) {
             const item = games.find(s => s.id === id);
-            //alert(`查看游戏详情: ${item.title}\n开发者: ${item.developer}\n\n(实际项目中此处应跳转至详情页)`);
         };
 
         window.playDemo = function(id) {
             const item = games.find(s => s.id === id);
-            //alert(`正在加载 WebGL 试玩环境: ${item.title}...`);
+	    window.location.href="https://games.qcyblog.dpdns.org/";
         };
 
         window.downloadGame = function(id) {
@@ -323,7 +322,6 @@
                 setTimeout(() => {
                     btn.innerHTML = originalText;
                     btn.classList.remove('bg-green-600');
-                    //alert(`开始下载: ${item.title}_Installer.exe`);
                 }, 1000);
             }, 800);
         };
